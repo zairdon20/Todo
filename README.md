@@ -13,6 +13,7 @@ Additional description about the project and its features.
 - html
 - css
 - JavaScript
+- Webpack
 
 ### Prerequisites
 
