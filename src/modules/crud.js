@@ -1,5 +1,6 @@
 const list = document.getElementById('todos-list');
 const addInput = document.getElementById('todo-input');
+const completed = document.getElementById('completed');
 
 let listArray = [];
 
@@ -34,41 +35,27 @@ const mSort = (callback) => {
   callback();
 };
 
+let removeTask = (index) => {
+  const local = getLocal();
+  const m = local.filter((e, m) => m !== index);
+  updateLocal(m);
+  loadTodo();
+};
+
 export const loadTodo = () => {
   mSort(() => {
     list.innerHTML = '';
     const local = getLocal();
 
-    local.forEach((element, i) => {
-      const li = document.createElement('li');
-      const checkbox = document.createElement('input');
-      checkbox.classList.add('checkbox');
-      checkbox.type = 'checkbox';
+    local.forEach((element) => {
+      list.innerHTML += `<li><input class="checkbox" type="checkbox" id="${element.index}"><p class="paragraph" id="${element.index}">${element.description}</p><i id="${element.index}" class="fas fa-trash delete-icon"></i></li>`;
 
-      const paragraph = document.createElement('p');
-      paragraph.id = i;
-      paragraph.classList.add('paragraph');
-      paragraph.textContent = element.description;
-
-      const div = document.createElement('div');
-      div.classList.add('TextItems');
-
-      const remove = document.createElement('button');
-      remove.value = i;
-      remove.addEventListener('click', () => {
-        const local = getLocal();
-        local.splice(i, 1);
-        updateLocal(local);
-        loadTodo();
+      let remove = document.querySelectorAll('.fa-trash');
+      remove.forEach((icon) => {
+        icon.addEventListener('click', () => {
+          removeTask(icon.id - 1);
+        });
       });
-      remove.classList.add('remove');
-      remove.innerHTML = '<i class="fas fa-trash delete-icon"></i>';
-
-      li.appendChild(checkbox);
-      li.appendChild(paragraph);
-      li.appendChild(remove);
-      list.appendChild(li);
-
       addInput.value = '';
     });
   });
@@ -111,7 +98,7 @@ export const updateTodo = () => {
     const newList = [];
 
     local.forEach((element, i) => {
-      if (position === i) {
+      if (position === i + 1) {
         newList.push({
           index: element.index,
           description: newText,
@@ -146,10 +133,35 @@ export const showEditInput = (paregraphElement) => {
   input.focus();
 };
 
+list.addEventListener('click', (e) => {
+  if (e.target.tagName === 'INPUT') {
+    const checkbox = e.target.checked;
+    const currentList = getLocal();
+    const task = currentList.find((todo) => todo.index === Number(e.target.id));
+    task.completed = checkbox;
+    updateLocal(currentList);
+  }
+});
+
+const clearCompleted = () => {
+  let currentList = getLocal();
+
+  currentList = currentList.filter((todo) => !todo.completed);
+  currentList = currentList.map((todo, index) => {
+    todo.index = index + 1;
+    return todo;
+  });
+  updateLocal(currentList);
+  loadTodo();
+};
+
+completed.addEventListener('click', clearCompleted);
+
 export const toggleComplete = (inputElement) => {
   if (inputElement.checked === false) {
     inputElement.parentElement.classList.remove('complete');
   } else {
     inputElement.parentElement.classList.add('complete');
+    inputElement.checked = true;
   }
 };
