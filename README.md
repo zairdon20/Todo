@@ -20,9 +20,13 @@ git clone https://github.com/zairdon20/Todo.git using your terminal or command l
 
 -Change to the project directory by entering :
 
-cd Todo in the terminal.
+cd Todo in the terminal.z  
 
 -run code . to open it in vscode
+
+-Install packages using the command npm install
+
+-run the project locally by entering the command npm start 
 
 
 ## Project status
