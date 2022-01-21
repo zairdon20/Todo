@@ -1,53 +1,44 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# AwesomeBooks
 
-> One paragraph statement about the project.
+This is a wesbite where you can add and remove books.
 
 ![screenshot](Screenshottt.png)
 
-Additional description about the project and its features.
+This project is my portfolio.
 
 ## Built With
 
-- html
-- css
-- JavaScript
-- Webpack
+- Javascript
+- HTML
+- CSS
+- Wabpack
 
-### Prerequisites
+[Live Demo](https://github.com/zairdon20/Todo.git)
 
-### Setup
+## Getting Started
 
-### Install
+### install
 
-### Usage
+- run npm start to view the project locally.
 
-### Run tests
+To get the content of this project locally you need to run this command in your terminal:
+
+- git clone your https://github.com/zairdon20/Todo.git
+- cd project My-Portfolio
+- open the index.html file to see project running.
 
 ### Deployment
 
+This project is deployed on a github page on the link below:
 
+- https://zairdon20.github.io/Todo/
 
-## Author
+👤 **Josphat Nkonde**
 
-👤 **Josphat**
-
-- GitHub: [zairdon20](https://github.com/githubhandle)
-- Twitter: [@Josphatnkonde1](https://twitter.com/twitterhandle)
-- LinkedIn: [Josphat Nkonde](https://linkedin.com/in/linkedinhandle)
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- GitHub: [@zairdon20](https://github.com/zairdon20)
+- Twitter: [@Josphat1](https://twitter.com/Josphat1/)
+- LinkedIn: [zairdon](https://www.linkedin.com/in/zairdon/)
 
 ## 📝 License
 
