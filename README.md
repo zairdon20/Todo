@@ -20,7 +20,7 @@ git clone https://github.com/zairdon20/Todo.git using your terminal or command l
 
 -Change to the project directory by entering :
 
-cd The-Portfolio in the terminal.
+cd Todo in the terminal.
 
 -run code . to open it in vscode
 
