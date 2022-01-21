@@ -1,32 +1,38 @@
 
-# AwesomeBooks
+# TODO-list
 
-This is a wesbite where you can add and remove books.
-
-![screenshot](Screenshottt.png)
-
-This project is my portfolio.
+This is a todo list where you can add and remove items.
 
 ## Built With
 
 - Javascript
 - HTML
 - CSS
-- Wabpack
+- Webpack
 
-[Live Demo](https://github.com/zairdon20/Todo.git)
+## How to use and run this project
 
-## Getting Started
+>To get a local copy up and running follow these simple example steps.
 
-### install
+-Clone this repository with
 
-- run npm start to view the project locally.
+git clone https://github.com/zairdon20/Todo.git using your terminal or command line.
 
-To get the content of this project locally you need to run this command in your terminal:
+-Change to the project directory by entering :
 
-- git clone your https://github.com/zairdon20/Todo.git
-- cd project My-Portfolio
-- open the index.html file to see project running.
+cd The-Portfolio in the terminal.
+
+-run code . to open it in vscode
+
+
+## Project status
+
+This project has been deployed
+
+## Screenshots
+
+![screenshot](Screenshottt.png)
+
 
 ### Deployment
 
@@ -34,11 +40,28 @@ This project is deployed on a github page on the link below:
 
 - https://zairdon20.github.io/Todo/
 
+## Issues
+Up to now, there are no issues with it.
+
+Here is the link to the issues tab:
+
+https://github.com/zairdon20/Todo/issues
+
+## Author
+
 👤 **Josphat Nkonde**
 
 - GitHub: [@zairdon20](https://github.com/zairdon20)
 - Twitter: [@Josphat1](https://twitter.com/Josphat1/)
 - LinkedIn: [zairdon](https://www.linkedin.com/in/zairdon/)
+
+## Show your support
+
+Give a :star:️ if you like this project!
+
+## Acknowledgments
+
+Thanks to everyone who helped me.
 
 ## 📝 License
 
