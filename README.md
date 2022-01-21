@@ -14,7 +14,7 @@ This is a todo list where you can add and remove items.
 
 >To get a local copy up and running follow these simple example steps.
 
--Clone this repository with
+- Clone this repository with
 
 git clone https://github.com/zairdon20/Todo.git using your terminal or command line.
 
@@ -22,11 +22,11 @@ git clone https://github.com/zairdon20/Todo.git using your terminal or command l
 
 cd Todo in the terminal.z  
 
--run code . to open it in vscode
+- run code . to open it in vscode
 
--Install packages using the command npm install
+- Install packages using the command npm install
 
--run the project locally by entering the command npm start 
+- run the project locally by entering the command npm start 
 
 
 ## Project status
