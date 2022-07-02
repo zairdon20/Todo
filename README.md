@@ -8,7 +8,6 @@ This is a todo list where you can add and remove items.
 - Javascript
 - HTML
 - CSS
-- Webpack
 
 ## How to use and run this project
 
